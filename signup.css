@@ -1,9 +1,97 @@
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     font-family: "Poppins";
-    box-sizing: border-box;
-    transition: all 0.3s ease;
+    /* box-sizing: border-box; */
+    /* transition: all 0.3s ease; */
+}
+.header{
+    min-height: 100px;
+    width: 100%;
+        /* background-position: center; */
+    position: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+}
+.header .ecoimg img{
+    height: 50px;
+    width: auto;
+    padding-top: 28px;
+}
+.header .econova a{
+    width: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    padding: 20px 10px;
+    font-family:  "segoe UI", serif;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 50px;
+    color: #48d44d;
+}
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: right;
+    /* position: left; */
+}
+.nav-links{
+    position: relative;
+    display: flex;
+    /* align-content: right; */
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #48d44d;
+    display: block;
+    margin :auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    /* border:1px solid black ; */
+    border-radius: 55px;
+    padding: 12px 25px;
+    font-size: 13px ;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    /* color: #48d44d; */
+    background-color:#48d44d;
+}
+.hero-btn:hover{
+    border: 1px solid #48d44d;
+    background: #48d44d;
+    transition: 1s;
 }
 
 .social-links {
@@ -47,7 +135,7 @@
 .container{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(231, 229, 229);
+    background-color: white;
 }
 .logo{
     position: absolute;
@@ -65,21 +153,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 .innerbox{
-    background-color: white;
+    background-color:#97ee9a;
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 15px;
+    height: 690px;
 }
 .form-container .innerbox h1{
-    font-weight: 500;
+    font-weight: 800;
 }
 .form-container .innerbox h3{
-    font-weight: 400;
+    font-weight: 600;
 }
 .form{
     margin-top: 30px;
@@ -114,7 +202,8 @@ label{
     margin-bottom: 6px;
 }
 .form input{
-    border: 1px solid rgba(118, 118, 118, 0.525);
+    /* border: 1px solid rgba(118, 118, 118, 0.525); */
+    border: solid 1px black;
     border-radius: 6px;
     padding: 6px;
     margin-bottom: 20px;
@@ -126,7 +215,7 @@ label{
     display: flex;
 }
 .checkbox{
-    height: 13px;
+    height: 36px;    
     width: 13px; 
     font-size: 5px;
     margin-right: 5px;
@@ -151,22 +240,23 @@ input[type="checkbox"]:checked{
     padding: 8px 20px;
     border-radius: 20px;
     color: white;
-    border: 2px solid rgb(180, 179, 179);
-    background: rgb(180, 179, 179);;
+    border: 2px solid #48d44d;
+    background: #48d44d;
 }
 .login-btn:hover{
-    background-color: orange;
-    border: 2px solid orange;
+    background-color: hsl(122, 93%, 29%);
+    border: 2px solid hsl(122, 93%, 29%);
 }
 
 
 
 .lgn-image{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/login-back.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(login.webp);
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
     width: 600px;
+    border-radius: 25px;
 }
 .acc{
     min-height: 100vh;
@@ -193,6 +283,6 @@ input[type="checkbox"]:checked{
     border-radius: 40px;
 }
 .login-link:hover{
-    background-color: rgb(222, 146, 3);
+    background-color: hsl(122, 93%, 29%);
 }
 
